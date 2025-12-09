@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "mood-analytics",
+  "version": "1.0",
+  "description": "Collects Spotify listening features and shows simple mood analytics.",
+  "permissions": [
+    "storage",
+    "identity",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://api.spotify.com/*",
+    "https://accounts.spotify.com/*",
+    "https://ws.audioscrobbler.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon128.png",
+    "48": "icon128.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_title": "Mood Analytics"
+  }
+}

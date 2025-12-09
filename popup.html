@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Mood Analytics</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>🎵 Mood Analytics</h2>
+
+    <div id="notConnected" class="center">
+      <p>Connect your Spotify to start tracking your listening mood.</p>
+      <button id="connectBtn">Connect Spotify</button>
+    </div>
+
+    <div id="dashboard" style="display:none;">
+      <div class="row">
+        <button id="fetchNow">↻ Refresh</button>
+        <button id="clearHistory">Clear History</button>
+      </div>
+
+      <div id="current" class="card">
+        <h3>🎧 Now Playing</h3>
+        <p id="trackInfo">—</p>
+        <p id="featInfo">—</p>
+      </div>
+
+      <div id="analytics" class="card">
+        <h3>📊 Your Stats</h3>
+        <div id="stats">
+          <p>Tracks Logged: <span id="count">0</span></p>
+          <p>Top Tags: <span id="topTags">—</span></p>
+        </div>
+        <h4>Mood Breakdown</h4>
+        <div id="moodBreakdown"></div>
+      </div>
+
+      <div id="history" class="card">
+        <h3>📝 Recent Tracks</h3>
+        <ul id="recentList"></ul>
+      </div>
+    </div>
+    <p id="status" class="small"></p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
