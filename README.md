@@ -30,7 +30,7 @@ A Chrome extension that tracks your Spotify listening and analyzes your mood bas
 
 ## Usage
 
-1. Play music on Spotify (desktop app or web player)
+1. Play music on Spotify (any device)
 2. Click the extension icon to open the dashboard
 3. Your current track and mood will appear automatically
 4. The extension auto-tracks new songs every 5 seconds while the popup is open
