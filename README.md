@@ -2,7 +2,6 @@
 
 A Chrome extension that tracks your Spotify listening and analyzes your mood based on music genre tags.
 
-![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-green)
 
 ## Features
 
