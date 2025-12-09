@@ -1,0 +1,199 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  min-width: 340px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 12px;
+  background: #1a1a2e;
+  color: #eee;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 6px;
+}
+
+h2 {
+  margin: 0 0 12px 0;
+  color: #1db954;
+}
+
+h3 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+h4 {
+  margin: 12px 0 8px 0;
+  font-size: 12px;
+  color: #888;
+}
+
+p {
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+.center {
+  text-align: center;
+  padding: 20px 0;
+}
+
+button {
+  padding: 10px 14px;
+  margin: 4px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+#connectBtn {
+  background: #1db954;
+  color: white;
+}
+
+#connectBtn:hover {
+  background: #1ed760;
+  transform: scale(1.02);
+}
+
+#fetchNow {
+  background: #1db954;
+  color: white;
+  flex: 1;
+}
+
+#fetchNow:hover {
+  background: #1ed760;
+}
+
+#clearHistory {
+  background: #333;
+  color: #aaa;
+}
+
+#clearHistory:hover {
+  background: #444;
+  color: #fff;
+}
+
+.card {
+  background: #16213e;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #1f3460;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+.small {
+  font-size: 11px;
+  color: #888;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#stats span {
+  color: #1db954;
+  font-weight: 600;
+}
+
+#moodBreakdown {
+  margin-top: 8px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.mood-pill {
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* Mood Picker */
+.mood-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.mood-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.mood-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Mood colors - used for both pills and buttons */
+.mood-hyped, .mood-btn.mood-hyped { background: #ff6b6b; color: white; }
+.mood-energetic, .mood-btn.mood-energetic { background: #ffa502; color: white; }
+.mood-happy, .mood-btn.mood-happy { background: #1db954; color: white; }
+.mood-chill, .mood-btn.mood-chill { background: #74b9ff; color: white; }
+.mood-moody, .mood-btn.mood-moody { background: #6c5ce7; color: white; }
+.mood-romantic, .mood-btn.mood-romantic { background: #fd79a8; color: white; }
+.mood-focused, .mood-btn.mood-focused { background: #00cec9; color: white; }
+.mood-neutral, .mood-btn.mood-neutral { background: #636e72; color: white; }
+.mood-unknown { background: #2d3436; color: #aaa; }
+
+#trackInfo {
+  font-weight: 600;
+  color: #fff;
+}
+
+#featInfo {
+  color: #888;
+  font-size: 12px;
+}
+
+#recentList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#recentList li {
+  padding: 6px 0;
+  border-bottom: 1px solid #1f3460;
+  font-size: 12px;
+  color: #bbb;
+}
+
+#recentList li:last-child {
+  border-bottom: none;
+}
+
+/* Scrollbar styling */
+#recentList::-webkit-scrollbar {
+  width: 6px;
+}
+
+#recentList::-webkit-scrollbar-track {
+  background: #16213e;
+}
+
+#recentList::-webkit-scrollbar-thumb {
+  background: #1f3460;
+  border-radius: 3px;
+}
