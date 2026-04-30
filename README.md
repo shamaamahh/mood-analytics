@@ -52,7 +52,3 @@ A Chrome extension that tracks your Spotify listening and analyzes your mood bas
 - Chrome Extension Manifest V3
 - Spotify Web API (OAuth with PKCE)
 - Last.fm API for genre tags
-
-## License
-
-MIT
