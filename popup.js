@@ -1,6 +1,6 @@
 // popup.js
 
-const LASTFM_API_KEY = "REMOVED";
+const LASTFM_API_KEY = "53b75f1bf854778c760e4d4e2d548124";
 
 const connectBtn = document.getElementById("connectBtn");
 const fetchNowBtn = document.getElementById("fetchNow");
